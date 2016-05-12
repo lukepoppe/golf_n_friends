@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct FriendIteam {
+struct FriendItem {
     
     let name: String
     

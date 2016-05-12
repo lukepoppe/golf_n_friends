@@ -7,14 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD27FB211CE4FE810053FD44 /* SearchUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27FB201CE4FE810053FD44 /* SearchUsersTableViewCell.swift */; };
+		AD27FB271CE508F20053FD44 /* FriendsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27FB261CE508F20053FD44 /* FriendsListTableViewController.swift */; };
+		ADA7C04F1CDA71BE00FF41F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA7C04E1CDA71BE00FF41F5 /* Default-568h@2x.png */; };
+		ADB86E371CDA8F8600E76957 /* golfBall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB86E361CDA8F8600E76957 /* golfBall.jpg */; };
+		ADCD8BA11CDDA34F0022A0E1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8B9B1CDDA34F0022A0E1 /* Bolts.framework */; };
+		ADCD8BA21CDDA34F0022A0E1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8B9C1CDDA34F0022A0E1 /* Parse.framework */; };
+		ADCD8BA31CDDA34F0022A0E1 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8B9D1CDDA34F0022A0E1 /* ParseFacebookUtils.framework */; };
+		ADCD8BA41CDDA34F0022A0E1 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8B9E1CDDA34F0022A0E1 /* ParseFacebookUtilsV4.framework */; };
+		ADCD8BA51CDDA34F0022A0E1 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8B9F1CDDA34F0022A0E1 /* ParseTwitterUtils.framework */; };
+		ADCD8BA61CDDA34F0022A0E1 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BA01CDDA34F0022A0E1 /* ParseUI.framework */; };
+		ADCD8BA81CDDA3820022A0E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BA71CDDA3820022A0E1 /* AudioToolbox.framework */; };
+		ADCD8BAA1CDDA38B0022A0E1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BA91CDDA38B0022A0E1 /* CFNetwork.framework */; };
+		ADCD8BAC1CDDA3920022A0E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BAB1CDDA3920022A0E1 /* CoreGraphics.framework */; };
+		ADCD8BAE1CDDA39B0022A0E1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BAD1CDDA39B0022A0E1 /* QuartzCore.framework */; };
+		ADCD8BB01CDDA3A10022A0E1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BAF1CDDA3A10022A0E1 /* Security.framework */; };
+		ADCD8BB21CDDA3A80022A0E1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BB11CDDA3A80022A0E1 /* StoreKit.framework */; };
+		ADCD8BB41CDDA3B00022A0E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BB31CDDA3B00022A0E1 /* SystemConfiguration.framework */; };
+		ADCD8BB61CDDA3BF0022A0E1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BB51CDDA3BE0022A0E1 /* libz.tbd */; };
+		ADCD8BB81CDDA3CA0022A0E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BB71CDDA3CA0022A0E1 /* libsqlite3.tbd */; };
+		ADCD8BBE1CE1147C0022A0E1 /* FriendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8BBD1CE1147C0022A0E1 /* FriendItem.swift */; };
+		ADCD8BC61CE12D450022A0E1 /* UserSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8BC51CE12D450022A0E1 /* UserSearch.swift */; };
 		ADE6792D1CD94C49002C25D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */; };
 		ADE6792F1CD94C49002C25D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6792E1CD94C49002C25D3 /* ViewController.swift */; };
 		ADE679321CD94C49002C25D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE679301CD94C49002C25D3 /* Main.storyboard */; };
 		ADE679341CD94C49002C25D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE679331CD94C49002C25D3 /* Assets.xcassets */; };
 		ADE679371CD94C49002C25D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE679351CD94C49002C25D3 /* LaunchScreen.storyboard */; };
+		B9343D77FF98D7D1AC750D41 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3F6D843B245428B7885414 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E3F6D843B245428B7885414 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36693C850AF5EDFDBA5B2219 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AD27FB201CE4FE810053FD44 /* SearchUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchUsersTableViewCell.swift; path = ../../../.Trash/SearchUsersTableViewCell.swift; sourceTree = "<group>"; };
+		AD27FB261CE508F20053FD44 /* FriendsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewController.swift; sourceTree = "<group>"; };
+		ADA7C04E1CDA71BE00FF41F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ADB86E361CDA8F8600E76957 /* golfBall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golfBall.jpg; path = ../golfBall.jpg; sourceTree = "<group>"; };
+		ADCD8B9B1CDDA34F0022A0E1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		ADCD8B9C1CDDA34F0022A0E1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		ADCD8B9D1CDDA34F0022A0E1 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		ADCD8B9E1CDDA34F0022A0E1 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		ADCD8B9F1CDDA34F0022A0E1 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		ADCD8BA01CDDA34F0022A0E1 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		ADCD8BA71CDDA3820022A0E1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ADCD8BA91CDDA38B0022A0E1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ADCD8BAB1CDDA3920022A0E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ADCD8BAD1CDDA39B0022A0E1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ADCD8BAF1CDDA3A10022A0E1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ADCD8BB11CDDA3A80022A0E1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		ADCD8BB31CDDA3B00022A0E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ADCD8BB51CDDA3BE0022A0E1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		ADCD8BB71CDDA3CA0022A0E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		ADCD8BBD1CE1147C0022A0E1 /* FriendItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendItem.swift; sourceTree = "<group>"; };
+		ADCD8BC51CE12D450022A0E1 /* UserSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearch.swift; sourceTree = "<group>"; };
 		ADE679291CD94C49002C25D3 /* golf_n_friends_client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golf_n_friends_client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE6792E1CD94C49002C25D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +67,7 @@
 		ADE679331CD94C49002C25D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE679361CD94C49002C25D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE679381CD94C49002C25D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7535D06116722F0C4974066 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCD8BB81CDDA3CA0022A0E1 /* libsqlite3.tbd in Frameworks */,
+				ADCD8BB61CDDA3BF0022A0E1 /* libz.tbd in Frameworks */,
+				ADCD8BB41CDDA3B00022A0E1 /* SystemConfiguration.framework in Frameworks */,
+				ADCD8BB21CDDA3A80022A0E1 /* StoreKit.framework in Frameworks */,
+				ADCD8BB01CDDA3A10022A0E1 /* Security.framework in Frameworks */,
+				ADCD8BAE1CDDA39B0022A0E1 /* QuartzCore.framework in Frameworks */,
+				ADCD8BAC1CDDA3920022A0E1 /* CoreGraphics.framework in Frameworks */,
+				ADCD8BAA1CDDA38B0022A0E1 /* CFNetwork.framework in Frameworks */,
+				ADCD8BA81CDDA3820022A0E1 /* AudioToolbox.framework in Frameworks */,
+				B9343D77FF98D7D1AC750D41 /* Pods.framework in Frameworks */,
+				ADCD8BA21CDDA34F0022A0E1 /* Parse.framework in Frameworks */,
+				ADCD8BA61CDDA34F0022A0E1 /* ParseUI.framework in Frameworks */,
+				ADCD8BA31CDDA34F0022A0E1 /* ParseFacebookUtils.framework in Frameworks */,
+				ADCD8BA11CDDA34F0022A0E1 /* Bolts.framework in Frameworks */,
+				ADCD8BA51CDDA34F0022A0E1 /* ParseTwitterUtils.framework in Frameworks */,
+				ADCD8BA41CDDA34F0022A0E1 /* ParseFacebookUtilsV4.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55D7E0DBA7A7380C4230B34F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36693C850AF5EDFDBA5B2219 /* Pods.debug.xcconfig */,
+				E7535D06116722F0C4974066 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD7187FE1CE403E00055AD80 /* navigation Menu */ = {
+			isa = PBXGroup;
+			children = (
+				ADCD8BBD1CE1147C0022A0E1 /* FriendItem.swift */,
+				ADCD8BC51CE12D450022A0E1 /* UserSearch.swift */,
+				AD27FB201CE4FE810053FD44 /* SearchUsersTableViewCell.swift */,
+				AD27FB261CE508F20053FD44 /* FriendsListTableViewController.swift */,
+			);
+			name = "navigation Menu";
+			sourceTree = "<group>";
+		};
 		ADE679201CD94C49002C25D3 = {
 			isa = PBXGroup;
 			children = (
+				ADA7C04E1CDA71BE00FF41F5 /* Default-568h@2x.png */,
 				ADE6792B1CD94C49002C25D3 /* golf_n_friends_client */,
 				ADE6792A1CD94C49002C25D3 /* Products */,
+				BA2533D0BC4DE6A7559F1D44 /* Frameworks */,
+				55D7E0DBA7A7380C4230B34F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +139,39 @@
 		ADE6792B1CD94C49002C25D3 /* golf_n_friends_client */ = {
 			isa = PBXGroup;
 			children = (
+				AD7187FE1CE403E00055AD80 /* navigation Menu */,
 				ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */,
 				ADE6792E1CD94C49002C25D3 /* ViewController.swift */,
 				ADE679301CD94C49002C25D3 /* Main.storyboard */,
 				ADE679331CD94C49002C25D3 /* Assets.xcassets */,
 				ADE679351CD94C49002C25D3 /* LaunchScreen.storyboard */,
 				ADE679381CD94C49002C25D3 /* Info.plist */,
+				ADB86E361CDA8F8600E76957 /* golfBall.jpg */,
 			);
 			path = golf_n_friends_client;
+			sourceTree = "<group>";
+		};
+		BA2533D0BC4DE6A7559F1D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADCD8BB71CDDA3CA0022A0E1 /* libsqlite3.tbd */,
+				ADCD8BB51CDDA3BE0022A0E1 /* libz.tbd */,
+				ADCD8BB31CDDA3B00022A0E1 /* SystemConfiguration.framework */,
+				ADCD8BB11CDDA3A80022A0E1 /* StoreKit.framework */,
+				ADCD8BAF1CDDA3A10022A0E1 /* Security.framework */,
+				ADCD8BAD1CDDA39B0022A0E1 /* QuartzCore.framework */,
+				ADCD8BAB1CDDA3920022A0E1 /* CoreGraphics.framework */,
+				ADCD8BA91CDDA38B0022A0E1 /* CFNetwork.framework */,
+				ADCD8BA71CDDA3820022A0E1 /* AudioToolbox.framework */,
+				ADCD8B9B1CDDA34F0022A0E1 /* Bolts.framework */,
+				ADCD8B9C1CDDA34F0022A0E1 /* Parse.framework */,
+				ADCD8B9D1CDDA34F0022A0E1 /* ParseFacebookUtils.framework */,
+				ADCD8B9E1CDDA34F0022A0E1 /* ParseFacebookUtilsV4.framework */,
+				ADCD8B9F1CDDA34F0022A0E1 /* ParseTwitterUtils.framework */,
+				ADCD8BA01CDDA34F0022A0E1 /* ParseUI.framework */,
+				1E3F6D843B245428B7885414 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADE6793B1CD94C49002C25D3 /* Build configuration list for PBXNativeTarget "golf_n_friends_client" */;
 			buildPhases = (
+				A86C0CEB5C08B8942AF6E19F /* Check Pods Manifest.lock */,
 				ADE679251CD94C49002C25D3 /* Sources */,
 				ADE679261CD94C49002C25D3 /* Frameworks */,
 				ADE679271CD94C49002C25D3 /* Resources */,
+				32F43F9406A052C5A0F814B0 /* Embed Pods Frameworks */,
+				BD4A1F79957E1E6FBBAD8E5E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE679371CD94C49002C25D3 /* LaunchScreen.storyboard in Resources */,
+				ADB86E371CDA8F8600E76957 /* golfBall.jpg in Resources */,
+				ADA7C04F1CDA71BE00FF41F5 /* Default-568h@2x.png in Resources */,
 				ADE679341CD94C49002C25D3 /* Assets.xcassets in Resources */,
 				ADE679321CD94C49002C25D3 /* Main.storyboard in Resources */,
 			);
@@ -131,11 +246,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32F43F9406A052C5A0F814B0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86C0CEB5C08B8942AF6E19F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD4A1F79957E1E6FBBAD8E5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADE679251CD94C49002C25D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD27FB211CE4FE810053FD44 /* SearchUsersTableViewCell.swift in Sources */,
+				ADCD8BBE1CE1147C0022A0E1 /* FriendItem.swift in Sources */,
+				ADCD8BC61CE12D450022A0E1 /* UserSearch.swift in Sources */,
+				AD27FB271CE508F20053FD44 /* FriendsListTableViewController.swift in Sources */,
 				ADE6792F1CD94C49002C25D3 /* ViewController.swift in Sources */,
 				ADE6792D1CD94C49002C25D3 /* AppDelegate.swift in Sources */,
 			);
@@ -246,8 +413,13 @@
 		};
 		ADE6793C1CD94C49002C25D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36693C850AF5EDFDBA5B2219 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = golf_n_friends_client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Luke-Poppe.golf-n-friends-client";
@@ -257,8 +429,13 @@
 		};
 		ADE6793D1CD94C49002C25D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7535D06116722F0C4974066 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = golf_n_friends_client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Luke-Poppe.golf-n-friends-client";
@@ -285,6 +462,7 @@
 				ADE6793D1CD94C49002C25D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

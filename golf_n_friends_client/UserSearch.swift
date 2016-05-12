@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import Parse
 
-class UserSearch: UIViewController {
+class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var myTable: UITableView!
+
+    
+    var users = [PFUser]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        loadUsers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +27,78 @@ class UserSearch: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return users.count
+        
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let userCell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) as! SearchUsersTableViewCell
+        
+        let userObject: PFUser = users[indexPath.row]
+        
+        userCell.textLabel!.text = userObject.objectForKey("username") as? String
+        
+        userCell.user = userObject
+        
+        return userCell
+        
+    }
+    
+    
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        
+        print("Row Tapped: \(indexPath.row)")
+//        print(users[indexPath.row])
+      
+        
+    }
+
+
+    
+    func loadUsers(){
+        
+        
+        let userQuery = PFQuery(className: "_User")
+        userQuery.findObjectsInBackgroundWithBlock{(result:[PFObject]?,error:
+            NSError?) -> Void in
+            
+            if let foundUsers = result as? [PFUser]
+            {
+                self.users = foundUsers
+                self.myTable.reloadData()
+            }
+        }
+    }
+    
+  
+    // MARK: Actions
+    
+    @IBAction func followUserAction(sender: AnyObject) {
+        print("hello")
+        
+        //        print(user)
+        //        print(user!.objectId)
+    
+        
+        let center = myTable.convertPoint(sender.center, fromView:sender.superview)
+        let indexPath = myTable.indexPathForRowAtPoint(center)
+        let follower = users[indexPath!.row]
+        
+        let user = PFUser.currentUser()
+        let followings = user!.relationForKey("followings")
+        followings.addObject(follower)
+        
+        user!.saveInBackgroundWithBlock { (succeeded: Bool, error: NSError?) in
+                if succeeded {
+                    print("add follower succeeded")
+                } else {
+                    print(error?.localizedDescription)
+                }
+        }
+        
+    }
 
 }
