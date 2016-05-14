@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD27FB211CE4FE810053FD44 /* SearchUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27FB201CE4FE810053FD44 /* SearchUsersTableViewCell.swift */; };
 		AD27FB271CE508F20053FD44 /* FriendsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27FB261CE508F20053FD44 /* FriendsListTableViewController.swift */; };
 		ADA7C04F1CDA71BE00FF41F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADA7C04E1CDA71BE00FF41F5 /* Default-568h@2x.png */; };
 		ADB86E371CDA8F8600E76957 /* golfBall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB86E361CDA8F8600E76957 /* golfBall.jpg */; };
@@ -28,6 +27,13 @@
 		ADCD8BB81CDDA3CA0022A0E1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ADCD8BB71CDDA3CA0022A0E1 /* libsqlite3.tbd */; };
 		ADCD8BBE1CE1147C0022A0E1 /* FriendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8BBD1CE1147C0022A0E1 /* FriendItem.swift */; };
 		ADCD8BC61CE12D450022A0E1 /* UserSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8BC51CE12D450022A0E1 /* UserSearch.swift */; };
+		ADD3B56F1CE6747300635661 /* LeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B56E1CE6747300635661 /* LeagueViewController.swift */; };
+		ADD3B5711CE6943100635661 /* LegueInvitationsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5701CE6943100635661 /* LegueInvitationsPickerViewController.swift */; };
+		ADD3B5731CE694AB00635661 /* UserInviteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5721CE694AB00635661 /* UserInviteTableViewCell.swift */; };
+		ADD3B5751CE69BE000635661 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5741CE69BE000635661 /* NotificationsTableViewController.swift */; };
+		ADD3B5781CE69CFF00635661 /* LeagueInvitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5771CE69CFF00635661 /* LeagueInvitationTableViewCell.swift */; };
+		ADD3B57B1CE69E3900635661 /* Legue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B57A1CE69E3900635661 /* Legue.swift */; };
+		ADD3B57D1CE69EE600635661 /* LeagueInvitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B57C1CE69EE600635661 /* LeagueInvitation.swift */; };
 		ADE6792D1CD94C49002C25D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */; };
 		ADE6792F1CD94C49002C25D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6792E1CD94C49002C25D3 /* ViewController.swift */; };
 		ADE679321CD94C49002C25D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE679301CD94C49002C25D3 /* Main.storyboard */; };
@@ -39,7 +45,6 @@
 /* Begin PBXFileReference section */
 		1E3F6D843B245428B7885414 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36693C850AF5EDFDBA5B2219 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		AD27FB201CE4FE810053FD44 /* SearchUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchUsersTableViewCell.swift; path = ../../../.Trash/SearchUsersTableViewCell.swift; sourceTree = "<group>"; };
 		AD27FB261CE508F20053FD44 /* FriendsListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewController.swift; sourceTree = "<group>"; };
 		ADA7C04E1CDA71BE00FF41F5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ADB86E361CDA8F8600E76957 /* golfBall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = golfBall.jpg; path = ../golfBall.jpg; sourceTree = "<group>"; };
@@ -60,6 +65,13 @@
 		ADCD8BB71CDDA3CA0022A0E1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		ADCD8BBD1CE1147C0022A0E1 /* FriendItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendItem.swift; sourceTree = "<group>"; };
 		ADCD8BC51CE12D450022A0E1 /* UserSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearch.swift; sourceTree = "<group>"; };
+		ADD3B56E1CE6747300635661 /* LeagueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueViewController.swift; sourceTree = "<group>"; };
+		ADD3B5701CE6943100635661 /* LegueInvitationsPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegueInvitationsPickerViewController.swift; sourceTree = "<group>"; };
+		ADD3B5721CE694AB00635661 /* UserInviteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInviteTableViewCell.swift; sourceTree = "<group>"; };
+		ADD3B5741CE69BE000635661 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
+		ADD3B5771CE69CFF00635661 /* LeagueInvitationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueInvitationTableViewCell.swift; sourceTree = "<group>"; };
+		ADD3B57A1CE69E3900635661 /* Legue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legue.swift; sourceTree = "<group>"; };
+		ADD3B57C1CE69EE600635661 /* LeagueInvitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueInvitation.swift; sourceTree = "<group>"; };
 		ADE679291CD94C49002C25D3 /* golf_n_friends_client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golf_n_friends_client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE6792E1CD94C49002C25D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,10 +123,30 @@
 			children = (
 				ADCD8BBD1CE1147C0022A0E1 /* FriendItem.swift */,
 				ADCD8BC51CE12D450022A0E1 /* UserSearch.swift */,
-				AD27FB201CE4FE810053FD44 /* SearchUsersTableViewCell.swift */,
 				AD27FB261CE508F20053FD44 /* FriendsListTableViewController.swift */,
+				ADD3B56E1CE6747300635661 /* LeagueViewController.swift */,
+				ADD3B5701CE6943100635661 /* LegueInvitationsPickerViewController.swift */,
+				ADD3B5721CE694AB00635661 /* UserInviteTableViewCell.swift */,
 			);
 			name = "navigation Menu";
+			sourceTree = "<group>";
+		};
+		ADD3B5761CE69C1700635661 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				ADD3B5741CE69BE000635661 /* NotificationsTableViewController.swift */,
+				ADD3B5771CE69CFF00635661 /* LeagueInvitationTableViewCell.swift */,
+			);
+			name = Notifications;
+			sourceTree = "<group>";
+		};
+		ADD3B5791CE69E1B00635661 /* Parse Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ADD3B57A1CE69E3900635661 /* Legue.swift */,
+				ADD3B57C1CE69EE600635661 /* LeagueInvitation.swift */,
+			);
+			name = "Parse Objects";
 			sourceTree = "<group>";
 		};
 		ADE679201CD94C49002C25D3 = {
@@ -139,6 +171,8 @@
 		ADE6792B1CD94C49002C25D3 /* golf_n_friends_client */ = {
 			isa = PBXGroup;
 			children = (
+				ADD3B5791CE69E1B00635661 /* Parse Objects */,
+				ADD3B5761CE69C1700635661 /* Notifications */,
 				AD7187FE1CE403E00055AD80 /* navigation Menu */,
 				ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */,
 				ADE6792E1CD94C49002C25D3 /* ViewController.swift */,
@@ -299,12 +333,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD27FB211CE4FE810053FD44 /* SearchUsersTableViewCell.swift in Sources */,
 				ADCD8BBE1CE1147C0022A0E1 /* FriendItem.swift in Sources */,
+				ADD3B5731CE694AB00635661 /* UserInviteTableViewCell.swift in Sources */,
+				ADD3B5711CE6943100635661 /* LegueInvitationsPickerViewController.swift in Sources */,
+				ADD3B5781CE69CFF00635661 /* LeagueInvitationTableViewCell.swift in Sources */,
+				ADD3B56F1CE6747300635661 /* LeagueViewController.swift in Sources */,
 				ADCD8BC61CE12D450022A0E1 /* UserSearch.swift in Sources */,
 				AD27FB271CE508F20053FD44 /* FriendsListTableViewController.swift in Sources */,
 				ADE6792F1CD94C49002C25D3 /* ViewController.swift in Sources */,
+				ADD3B57B1CE69E3900635661 /* Legue.swift in Sources */,
 				ADE6792D1CD94C49002C25D3 /* AppDelegate.swift in Sources */,
+				ADD3B5751CE69BE000635661 /* NotificationsTableViewController.swift in Sources */,
+				ADD3B57D1CE69EE600635661 /* LeagueInvitation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

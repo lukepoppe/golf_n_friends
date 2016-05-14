@@ -17,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
       
+        // Define Parse subclasses
+        League.registerSubclass()
+        LeagueInvitation.registerSubclass()
+        
         // Initialize Parse.
         let configuration = ParseClientConfiguration {
             $0.applicationId = "app"

@@ -9,17 +9,22 @@
 import UIKit
 import Parse
 
-class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var myTable: UITableView!
 
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var users = [PFUser]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         
         loadUsers()
+        
+        print(users)
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,13 +38,13 @@ class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let userCell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) as! SearchUsersTableViewCell
+        let userCell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) 
         
         let userObject: PFUser = users[indexPath.row]
         
         userCell.textLabel!.text = userObject.objectForKey("username") as? String
         
-        userCell.user = userObject
+
         
         return userCell
         
@@ -61,7 +66,19 @@ class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate {
     func loadUsers(){
         
         
-        let userQuery = PFQuery(className: "_User")
+        var userQuery = PFQuery(className: "_User")
+        if let searchQuery = self.searchBar.text {
+            let userQuery1 = PFQuery(className: "_User")
+            userQuery1.whereKey("username", matchesRegex: "(?i)\(searchQuery)")
+            let userQuery2 = PFQuery(className: "_User")
+            userQuery2.whereKey("firstName", matchesRegex: "(?i)\(searchQuery)")
+            let userQuery3 = PFQuery(className: "_User")
+            userQuery3.whereKey("lastName", matchesRegex: "(?i)\(searchQuery)")
+            
+            userQuery = PFQuery.orQueryWithSubqueries([userQuery1, userQuery2, userQuery3])
+        }
+        
+        
         userQuery.findObjectsInBackgroundWithBlock{(result:[PFObject]?,error:
             NSError?) -> Void in
             
@@ -77,10 +94,7 @@ class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate {
     // MARK: Actions
     
     @IBAction func followUserAction(sender: AnyObject) {
-        print("hello")
-        
-        //        print(user)
-        //        print(user!.objectId)
+
     
         
         let center = myTable.convertPoint(sender.center, fromView:sender.superview)
@@ -99,6 +113,28 @@ class UserSearch: UIViewController,UITableViewDataSource, UITableViewDelegate {
                 }
         }
         
+    }
+    
+    // MARK: UISearchBarDelegate
+    
+    var searchTimer = NSTimer()
+    var searchOperationQueue = NSOperationQueue()
+    
+    func searchBar(searchBar: UISearchBar, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+//        let finalText = (searchBar.text as? NSString)?.stringByReplacingCharactersInRange(range, withString: text)
+        
+        self.searchTimer.invalidate()
+        self.searchTimer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: #selector(UserSearch.searchTimerFired), userInfo: nil, repeats: false)
+        
+        return true
+    }
+    
+    func searchTimerFired() {
+        self.searchOperationQueue.cancelAllOperations()
+        
+        self.searchOperationQueue.addOperationWithBlock {
+            self.loadUsers()
+        }
     }
 
 }

@@ -7,20 +7,24 @@
 //
 
 import UIKit
+import Parse
+
 
 class FriendsListTableViewController: UITableViewController {
+        var users = [PFUser]()
+    
+    var currentUser = PFUser.currentUser()
         
     @IBOutlet weak var myTable: UITableView!
     
-    
-        var fruits = ["Apple", "Pineapple", "Orange", "Blackberry", "Banana", "Pear", "Kiwi", "Strawberry", "Mango", "Walnut", "Apricot", "Tomato", "Almond", "Date", "Melon", "Water Melon", "Lemon", "Coconut", "Fig", "Passionfruit", "Star Fruit", "Clementin", "Citron", "Cherry", "Cranberry"]
+
         
         override func viewDidLoad() {
             super.viewDidLoad()
             print("FollowListViewController loaded")
             
-            
-            // Do any additional setup after loading the view.
+            loadFollowing()
+
         }
         
         override func didReceiveMemoryWarning() {
@@ -28,20 +32,19 @@ class FriendsListTableViewController: UITableViewController {
             // Dispose of any resources that can be recreated.
         }
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return fruits.count
+            return users.count
             
         }
         
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
             let userCell = myTable.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath)
-            // Fetch Fruit
-            let fruit = fruits[indexPath.row]
+
+            let userObject: PFUser = users[indexPath.row]
             
-            // Configure Cell
-            userCell.textLabel?.text = fruit
+            userCell.textLabel!.text = userObject.objectForKey("username") as? String
             
             return userCell
-        }
+            }
         
         override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
             
@@ -50,6 +53,28 @@ class FriendsListTableViewController: UITableViewController {
             
             
         }
-        
-        
+    
+    func loadFollowing(){
+    
+        let user = PFUser.currentUser()
+        let relation = user!.relationForKey("followings")
+        relation.query().findObjectsInBackgroundWithBlock {
+                    (result: [PFObject]?, error: NSError?) -> Void in
+            if error != nil {
+                print("Error")
+            } else if let foundUsers = result as? [PFUser]
+            {
+                self.users = foundUsers
+                self.myTable.reloadData()
+                
+            }
+                    
+        }
+    }
+
+    
+    
 }
+
+
+
