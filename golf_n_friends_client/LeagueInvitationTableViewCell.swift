@@ -17,7 +17,13 @@ class LeagueInvitationTableViewCell: UITableViewCell {
     
     var delegate : LeagueInvitationTableViewCellDelegate?
     
-    var leagueInvitation : LeagueInvitation?
+    var leagueInvitation : LeagueInvitation? {
+        didSet {
+            if let invitation = leagueInvitation {
+                self.titleLabel.text = invitation.league?.leagueName
+            }
+        }
+    }
 
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
@@ -43,8 +49,10 @@ class LeagueInvitationTableViewCell: UITableViewCell {
         if let league = self.leagueInvitation?.league,
             let members = league.members,
             let currentUser = PFUser.currentUser(){
-            members.addObject(currentUser)
-            league.saveInBackground()
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+                members.addObject(currentUser)
+                league.saveInBackground()
+            })
         }
         
         // Delete the invitation

@@ -62,7 +62,7 @@
                                 <state key="normal" title="login"/>
                                 <connections>
                                     <action selector="LoginBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jvu-Gz-dKv"/>
-                                    <segue destination="4Hi-An-P2X" kind="show" id="LOv-ZF-qx1"/>
+                                    <segue destination="S8f-8J-rZZ" kind="show" id="LOv-ZF-qx1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWp-sd-bq2">
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1287.5" y="207.5"/>
+            <point key="canvasLocation" x="-1302.5" y="195.5"/>
         </scene>
         <!--Friends List Table View Controller-->
         <scene sceneID="S5d-81-yrJ">
@@ -159,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="-2160.5" y="1893.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome To Fore Friends-->
         <scene sceneID="AVR-wg-Isb">
             <objects>
                 <viewController storyboardIdentifier="MainVC" id="4Hi-An-P2X" customClass="ViewController" customModule="golf_n_friends_client" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,33 +189,23 @@
                                 <rect key="frame" x="232" y="589" width="51" height="30"/>
                                 <state key="normal" title="League"/>
                                 <connections>
-                                    <segue destination="VvZ-Ot-wxB" kind="show" id="dnF-x6-gad"/>
+                                    <segue destination="Q2x-ht-CPp" kind="show" id="3sZ-67-k9K"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Z6-8w-xHW">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Welcome To Fore Friends" id="9Le-O7-BeO" propertyAccessControl="none">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="sCv-dw-ElQ">
-                                            <connections>
-                                                <segue destination="RDN-UI-YxZ" kind="show" id="zeR-Re-0Mh"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="5Z6-8w-xHW" secondAttribute="trailing" id="EZf-O1-0d8"/>
-                            <constraint firstItem="5Z6-8w-xHW" firstAttribute="top" secondItem="joA-kq-ONZ" secondAttribute="bottom" id="qhU-WF-o0Y"/>
-                            <constraint firstItem="5Z6-8w-xHW" firstAttribute="leading" secondItem="nVJ-Iv-5iy" secondAttribute="leading" id="y1H-eN-7Fm"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome To Fore Friends" id="Bdl-3c-gg0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="organize" id="sCv-dw-ElQ">
+                            <connections>
+                                <segue destination="RDN-UI-YxZ" kind="show" id="zeR-Re-0Mh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jo-Ar-ZKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-720.5" y="147.5"/>
+            <point key="canvasLocation" x="-133.5" y="147.5"/>
         </scene>
         <!--Notifications Table View Controller-->
         <scene sceneID="j1p-lA-q9B">
@@ -227,7 +217,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeagueInvitationTableViewCell" id="chL-4o-Ap4" customClass="LeagueInvitationTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chL-4o-Ap4" id="v0O-mu-Kar">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -268,7 +258,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdz-pq-4kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118.5" y="147.5"/>
+            <point key="canvasLocation" x="468.5" y="147.5"/>
         </scene>
         <!--League View Controller-->
         <scene sceneID="ZMO-xj-QdL">
@@ -561,22 +551,22 @@
             <point key="canvasLocation" x="230.5" y="1198.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="wnk-aW-qDn">
+        <scene sceneID="FOR-xp-mOF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VvZ-Ot-wxB" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S8f-8J-rZZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsp-kD-QbX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a51-sW-KJ2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Q2x-ht-CPp" kind="relationship" relationship="rootViewController" id="ez5-sQ-Fxq"/>
+                        <segue destination="4Hi-An-P2X" kind="relationship" relationship="rootViewController" id="erB-FY-oVM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tcn-4r-wU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPd-Ms-cjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-830.5" y="1172.5"/>
+            <point key="canvasLocation" x="-720.5" y="147.5"/>
         </scene>
     </scenes>
 </document>

@@ -26,11 +26,6 @@ class NotificationsTableViewController: UITableViewController, LeagueInvitationT
         self.loadContent()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -45,20 +40,27 @@ class NotificationsTableViewController: UITableViewController, LeagueInvitationT
     
     
     func loadContent(){
-        guard let currentUser = PFUser.currentUser() else {
+        guard let user = PFUser.currentUser() else {
             return
         }
+
+        let query = PFQuery(className: "LeagueInvitation")
+        query.whereKey("leagueInvitationRecipient", equalTo: user)
         
-        let userQuery = PFQuery(className: LeagueInvitation.parseClassName())
-        userQuery.whereKey("leagueInvitationRecipient", equalTo: currentUser)
-        
-        userQuery.findObjectsInBackgroundWithBlock{(result:[PFObject]?,error:
+         query.findObjectsInBackgroundWithBlock {(result:[PFObject]?,error:
             NSError?) -> Void in
             
-            if let foundUsers = result as? [LeagueInvitation]
+            if let foundInvitations = result as? [LeagueInvitation]
             {
-                self.items = foundUsers
-                self.tableView.reloadData()
+                for invite in foundInvitations {
+                    try! invite.league?.fetchIfNeeded()
+                }
+                self.items = foundInvitations
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.tableView.reloadData()
+                })
+                print("Loaded", foundInvitations)
                 
             }
         }
@@ -70,7 +72,8 @@ class NotificationsTableViewController: UITableViewController, LeagueInvitationT
 
         // Configure the cell...
         let invitation = self.items[indexPath.row]
-        cell.titleLabel.text = invitation.league?.leagueName
+        cell.leagueInvitation = invitation
+        cell.delegate = self
 
         return cell
     }

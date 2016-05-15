@@ -11,8 +11,22 @@ import Parse
 
 class League: PFObject, PFSubclassing {
     
-    var leagueName : String?
-    var members : PFRelation?
+    var leagueName : String? {
+        set {
+            if let value = newValue {
+                self.setObject(value, forKey: "leagueName")
+            }
+        }
+        get {
+            return self.objectForKey("leagueName") as? String
+        }
+    }
+    
+    var members : PFRelation? {
+        get {
+            return self.relationForKey("members")
+        }
+    }
 
     static func parseClassName() -> String {
         return "League"

@@ -11,10 +11,43 @@ import Parse
 
 class LeagueInvitation: PFObject, PFSubclassing {
     
-    var league : League?
-    var leagueCreator : PFUser?
-    var leagueInvitationRecipient : PFUser?
-
+    
+    var leagueCreator : PFUser? {
+        set {
+            if let value = newValue {
+                self.setObject(value, forKey: "leagueCreator")
+            }
+        }
+        get {
+            return self.objectForKey("leagueCreator") as? PFUser
+        }
+    }
+    
+    
+    var leagueInvitationRecipient : PFUser? {
+        set {
+            if let value = newValue {
+                self.setObject(value, forKey: "leagueInvitationRecipient")
+            }
+        }
+        get {
+            return self.objectForKey("leagueInvitationRecipient") as? PFUser
+        }
+    }
+    
+    var league : League? {
+        set {
+            if let value = newValue {
+                self.setObject(value, forKey: "league")
+            }
+        }
+        get {
+            return self.objectForKey("league") as? League
+        }
+    }
+    
+    
+    
     static func parseClassName() -> String {
         return "LeagueInvitation"
     }
