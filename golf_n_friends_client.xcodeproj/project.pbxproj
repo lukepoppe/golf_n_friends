@@ -34,11 +34,19 @@
 		ADD3B5781CE69CFF00635661 /* LeagueInvitationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5771CE69CFF00635661 /* LeagueInvitationTableViewCell.swift */; };
 		ADD3B57B1CE69E3900635661 /* Legue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B57A1CE69E3900635661 /* Legue.swift */; };
 		ADD3B57D1CE69EE600635661 /* LeagueInvitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B57C1CE69EE600635661 /* LeagueInvitation.swift */; };
+		ADD3B57F1CE8F61E00635661 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B57E1CE8F61E00635661 /* HomeViewController.swift */; };
+		ADD3B5811CE8F82F00635661 /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5801CE8F82F00635661 /* User+Extension.swift */; };
+		ADD3B5831CE8F97600635661 /* LeagueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3B5821CE8F97600635661 /* LeagueTableViewCell.swift */; };
 		ADE6792D1CD94C49002C25D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */; };
 		ADE6792F1CD94C49002C25D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6792E1CD94C49002C25D3 /* ViewController.swift */; };
 		ADE679321CD94C49002C25D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE679301CD94C49002C25D3 /* Main.storyboard */; };
 		ADE679341CD94C49002C25D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE679331CD94C49002C25D3 /* Assets.xcassets */; };
 		ADE679371CD94C49002C25D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE679351CD94C49002C25D3 /* LaunchScreen.storyboard */; };
+		ADEFE3751CF626D80038077D /* LeagueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3741CF626D80038077D /* LeagueDetailViewController.swift */; };
+		ADEFE3771CF628300038077D /* ReportScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3761CF628300038077D /* ReportScoreTableViewController.swift */; };
+		ADEFE3791CF628690038077D /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3781CF628690038077D /* Score.swift */; };
+		ADEFE37B1CF6289A0038077D /* HoleScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE37A1CF6289A0038077D /* HoleScore.swift */; };
+		ADEFE37D1CF62B8C0038077D /* HoleScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE37C1CF62B8C0038077D /* HoleScoreTableViewCell.swift */; };
 		B9343D77FF98D7D1AC750D41 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3F6D843B245428B7885414 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +80,9 @@
 		ADD3B5771CE69CFF00635661 /* LeagueInvitationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueInvitationTableViewCell.swift; sourceTree = "<group>"; };
 		ADD3B57A1CE69E3900635661 /* Legue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legue.swift; sourceTree = "<group>"; };
 		ADD3B57C1CE69EE600635661 /* LeagueInvitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueInvitation.swift; sourceTree = "<group>"; };
+		ADD3B57E1CE8F61E00635661 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ADD3B5801CE8F82F00635661 /* User+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
+		ADD3B5821CE8F97600635661 /* LeagueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueTableViewCell.swift; sourceTree = "<group>"; };
 		ADE679291CD94C49002C25D3 /* golf_n_friends_client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golf_n_friends_client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6792C1CD94C49002C25D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE6792E1CD94C49002C25D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +90,11 @@
 		ADE679331CD94C49002C25D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE679361CD94C49002C25D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE679381CD94C49002C25D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADEFE3741CF626D80038077D /* LeagueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeagueDetailViewController.swift; sourceTree = "<group>"; };
+		ADEFE3761CF628300038077D /* ReportScoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportScoreTableViewController.swift; sourceTree = "<group>"; };
+		ADEFE3781CF628690038077D /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		ADEFE37A1CF6289A0038077D /* HoleScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoleScore.swift; sourceTree = "<group>"; };
+		ADEFE37C1CF62B8C0038077D /* HoleScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoleScoreTableViewCell.swift; sourceTree = "<group>"; };
 		E7535D06116722F0C4974066 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,8 +161,23 @@
 			children = (
 				ADD3B57A1CE69E3900635661 /* Legue.swift */,
 				ADD3B57C1CE69EE600635661 /* LeagueInvitation.swift */,
+				ADD3B5801CE8F82F00635661 /* User+Extension.swift */,
+				ADEFE3781CF628690038077D /* Score.swift */,
+				ADEFE37A1CF6289A0038077D /* HoleScore.swift */,
 			);
 			name = "Parse Objects";
+			sourceTree = "<group>";
+		};
+		ADD3B5841CE8F97E00635661 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ADD3B57E1CE8F61E00635661 /* HomeViewController.swift */,
+				ADD3B5821CE8F97600635661 /* LeagueTableViewCell.swift */,
+				ADEFE3741CF626D80038077D /* LeagueDetailViewController.swift */,
+				ADEFE3761CF628300038077D /* ReportScoreTableViewController.swift */,
+				ADEFE37C1CF62B8C0038077D /* HoleScoreTableViewCell.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		ADE679201CD94C49002C25D3 = {
@@ -171,6 +202,7 @@
 		ADE6792B1CD94C49002C25D3 /* golf_n_friends_client */ = {
 			isa = PBXGroup;
 			children = (
+				ADD3B5841CE8F97E00635661 /* Home */,
 				ADD3B5791CE69E1B00635661 /* Parse Objects */,
 				ADD3B5761CE69C1700635661 /* Notifications */,
 				AD7187FE1CE403E00055AD80 /* navigation Menu */,
@@ -333,9 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEFE37B1CF6289A0038077D /* HoleScore.swift in Sources */,
+				ADEFE3751CF626D80038077D /* LeagueDetailViewController.swift in Sources */,
 				ADCD8BBE1CE1147C0022A0E1 /* FriendItem.swift in Sources */,
+				ADD3B5831CE8F97600635661 /* LeagueTableViewCell.swift in Sources */,
 				ADD3B5731CE694AB00635661 /* UserInviteTableViewCell.swift in Sources */,
 				ADD3B5711CE6943100635661 /* LegueInvitationsPickerViewController.swift in Sources */,
+				ADEFE37D1CF62B8C0038077D /* HoleScoreTableViewCell.swift in Sources */,
 				ADD3B5781CE69CFF00635661 /* LeagueInvitationTableViewCell.swift in Sources */,
 				ADD3B56F1CE6747300635661 /* LeagueViewController.swift in Sources */,
 				ADCD8BC61CE12D450022A0E1 /* UserSearch.swift in Sources */,
@@ -344,6 +380,10 @@
 				ADD3B57B1CE69E3900635661 /* Legue.swift in Sources */,
 				ADE6792D1CD94C49002C25D3 /* AppDelegate.swift in Sources */,
 				ADD3B5751CE69BE000635661 /* NotificationsTableViewController.swift in Sources */,
+				ADEFE3771CF628300038077D /* ReportScoreTableViewController.swift in Sources */,
+				ADD3B57F1CE8F61E00635661 /* HomeViewController.swift in Sources */,
+				ADD3B5811CE8F82F00635661 /* User+Extension.swift in Sources */,
+				ADEFE3791CF628690038077D /* Score.swift in Sources */,
 				ADD3B57D1CE69EE600635661 /* LeagueInvitation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

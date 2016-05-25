@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MHTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1B10C1D7CE4912416DAA9FF0C57531A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30F07B4944129D7BFBCA023D9A20EC7E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>58A9B54FAB93921BB41AACC26CBC6D8D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8972D1B3785A7CF11C5D31FB702BCB0E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA5783E1E72DAF034F5567D9F2721A2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,0 +1,6 @@
+framework module MHTextField {
+  umbrella header "MHTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

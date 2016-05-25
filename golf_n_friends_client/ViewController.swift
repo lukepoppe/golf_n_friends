@@ -52,10 +52,7 @@ class ViewController: UIViewController {
             
             if Error == nil{
                 dispatch_async(dispatch_get_main_queue()){
-                    var Storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    var MainVC : UIViewController = Storyboard.instantiateViewControllerWithIdentifier("MainVC") as!
-                    UIViewController
-                    self.presentViewController(MainVC, animated: true, completion: nil)
+                    self.performSegueWithIdentifier("showMainVC", sender: nil)
                     
                 }
             }

@@ -44,7 +44,7 @@ class NotificationsTableViewController: UITableViewController, LeagueInvitationT
             return
         }
 
-        let query = PFQuery(className: "LeagueInvitation")
+        let query = PFQuery(className: LeagueInvitation.parseClassName())
         query.whereKey("leagueInvitationRecipient", equalTo: user)
         
          query.findObjectsInBackgroundWithBlock {(result:[PFObject]?,error:

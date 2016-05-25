@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
       
         // Define Parse subclasses
+        Score.registerSubclass()
+        HoleScore.registerSubclass()
         League.registerSubclass()
         LeagueInvitation.registerSubclass()
         

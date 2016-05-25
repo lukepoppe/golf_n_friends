@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B9325DAB82EF19016C014F72'
-               BlueprintName = 'Pods'
+               BlueprintIdentifier = '605E32386146C12C68DE7B4B'
+               BlueprintName = 'MHTextField'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods.framework'>
+               BuildableName = 'MHTextField.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

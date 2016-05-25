@@ -33,9 +33,13 @@ class LeagueViewController: UITableViewController, LegueInvitationsPickerVCDeleg
     }
     
     func CreateLeague(){
+        guard let user = PFUser.currentUser() else {
+            return
+        }
+        
         let league = League()
         league.leagueName = leagueName.text
-
+        league.members?.addObject(user)
         
         league.saveInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
@@ -45,8 +49,12 @@ class LeagueViewController: UITableViewController, LegueInvitationsPickerVCDeleg
             } else {
                 // Hooray! Let them use the app now.
                 self.sendInvitations(league)
+                
+                user.leagues?.addObject(league)
+                user.saveInBackground()
             }
         }
+        
         
     }
     
