@@ -13,6 +13,13 @@ let maximumNumberOfHoleScores = 18
 
 class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate {
 
+    @IBAction func submitScoreBtnAction(sender: AnyObject) {
+        print("submitScoreBtnAction fired")
+        navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
+    
     var league : League?
     
     var holeScores = [HoleScore]()
@@ -24,13 +31,23 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
                 query?.addAscendingOrder("order")
                 query?.findObjectsInBackgroundWithBlock({ (objects, error) in
                     dispatch_async(dispatch_get_main_queue(), {
+                        var needPrompt = false
+                        
                         if let holeScores = objects as? [HoleScore] {
                             self.holeScores = holeScores
                             self.tableView.reloadData()
                             
-                            self.addNewHoleScore()
+                            if self.holeScores.count < 18 {
+                                self.addNewHoleScore()
+                            }
                         } else {
                             // Prompt the user for first hole number
+                            needPrompt = true
+                        }
+                        if objects?.count == 0 {
+                            needPrompt = true
+                        }
+                        if needPrompt == true {
                             self.promptForFirstHoleNumber()
                         }
                     })
@@ -38,6 +55,16 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
             }
         }
     }
+    
+    
+    @IBAction func submitScoreAction(sender: AnyObject) {
+        print("submitScoreAction fired")
+        print(holeScores)
+    
+        
+        
+    }
+    
     
     var firstHoleNumber : Int! {
         didSet {
@@ -80,6 +107,8 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
     func cancelScoreInput(action: UIAlertAction) {
         self.navigationController?.popViewControllerAnimated(true)
     }
+    
+    
     
     
     override func viewDidLoad() {
@@ -142,6 +171,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         return holeScore.order! + 1 == self.holeScores.count
     }
     
+  
 
     // MARK: - UITextFieldDelegate
     
@@ -194,7 +224,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         }
         
         // If this is the last hole
-        if self.isLastHoleScore(holeScore) {
+        if self.isLastHoleScore(holeScore) && self.holeScores.count < 18  {
             
             addNewHoleScore()!
         }

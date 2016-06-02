@@ -261,7 +261,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdz-pq-4kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536.5" y="-161.5"/>
+            <point key="canvasLocation" x="548.5" y="-565.5"/>
         </scene>
         <!--League Detail-->
         <scene sceneID="ZNB-qf-7qt">
@@ -358,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usv-Tg-76N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519.5" y="552.5"/>
+            <point key="canvasLocation" x="519.5" y="268.5"/>
         </scene>
         <!--Report Score Table View Controller-->
         <scene sceneID="YMJ-6R-ZpT">
@@ -368,6 +368,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bkT-QL-9Vg">
+                            <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="submitScoreBtnAction"/>
+                            <connections>
+                                <action selector="submitScoreAction:" destination="eqI-Pk-zla" eventType="touchUpInside" id="v4f-gH-Zhr"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textFieldCell" id="mT4-dM-nb1" customClass="HoleScoreTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
@@ -407,9 +415,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m74-VB-xhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.5" y="511.5"/>
+            <point key="canvasLocation" x="1048.5" y="211.5"/>
         </scene>
-        <!--League View Controller-->
+        <!--Title-->
         <scene sceneID="ZMO-xj-QdL">
             <objects>
                 <tableViewController id="Q2x-ht-CPp" customClass="LeagueViewController" customModule="golf_n_friends_client" customModuleProvider="target" sceneMemberID="viewController">
@@ -485,7 +493,7 @@
                             <outlet property="delegate" destination="Q2x-ht-CPp" id="PcL-HZ-RlQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="EMq-BC-oNT"/>
+                    <navigationItem key="navigationItem" title="Title" id="YPG-de-6pt"/>
                     <connections>
                         <outlet property="invitedPeoplesNamesLabel" destination="nA5-4D-siS" id="f0W-fH-Peb"/>
                         <outlet property="leagueName" destination="BPp-li-NkY" id="7ib-q3-JRs"/>
@@ -493,7 +501,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9YU-GH-crr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590.5" y="1051.5"/>
+            <point key="canvasLocation" x="438.5" y="1055.5"/>
         </scene>
         <!--User Search-->
         <scene sceneID="eyN-z4-Eko">
@@ -667,7 +675,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zO5-Bb-9Pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433.5" y="1065.5"/>
+            <point key="canvasLocation" x="1101.5" y="1091.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="FOR-xp-mOF">
