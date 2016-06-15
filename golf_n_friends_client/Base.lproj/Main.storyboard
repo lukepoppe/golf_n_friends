@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVx-eL-O1t">
@@ -24,55 +24,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuK-sz-1bJ">
-                                <rect key="frame" x="137" y="116" width="114" height="54"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="16"/>
-                                <color key="textColor" red="0.039215686274509803" green="0.7803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJR-IL-L1D">
-                                <rect key="frame" x="150" y="206" width="79" height="56"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="16"/>
-                                <color key="textColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sKK-zD-jaM">
-                                <rect key="frame" x="27" y="260" width="322" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-f3-F1K">
-                                <rect key="frame" x="27" y="347" width="322" height="30"/>
-                                <color key="textColor" red="0.96078431372549022" green="0.88627450980392153" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTL-cy-4oa">
-                                <rect key="frame" x="321" y="78" width="34" height="30"/>
-                                <state key="normal" title="login">
-                                    <color key="titleColor" red="0.039215686274509803" green="0.7803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="LoginBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jvu-Gz-dKv"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mc4-sM-MgL">
-                                <rect key="frame" x="26" y="168" width="322" height="30"/>
-                                <color key="textColor" red="0.50588235294117645" green="0.9137254901960784" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hj-7p-gTJ">
-                                <rect key="frame" x="22" y="78" width="55" height="30"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="0.039215686274509803" green="0.7803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="SignUpBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHe-Ye-8vu"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-Fg-F8U">
-                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="21" width="600" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.039215686274509803" green="0.7803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -82,34 +35,70 @@
                                     <navigationItem title="Welcome To Fore Friends" id="Zcf-3f-gWZ" userLabel="welcomeLabel" propertyAccessControl="none"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1q-ZZ-bMu">
-                                <rect key="frame" x="151" y="298" width="75" height="50"/>
-                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="16"/>
-                                <color key="textColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-VJ-N3g">
+                                <rect key="frame" x="139" y="206" width="322" height="164"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sKK-zD-jaM">
+                                        <rect key="frame" x="0.0" y="38" width="322" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-f3-F1K">
+                                        <rect key="frame" x="0.0" y="76" width="322" height="30"/>
+                                        <color key="textColor" red="0.96078431372549022" green="0.88627450980392153" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hj-7p-gTJ">
+                                        <rect key="frame" x="0.0" y="114" width="152" height="30"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SignUpBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHe-Ye-8vu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTL-cy-4oa">
+                                        <rect key="frame" x="165" y="114" width="149" height="30"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LoginBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jvu-Gz-dKv"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mc4-sM-MgL">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="30"/>
+                                        <color key="textColor" red="0.50588235294117645" green="0.9137254901960784" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="a2g-Fg-F8U" secondAttribute="trailing" constant="-20" id="Cwg-rt-IpQ"/>
                             <constraint firstItem="a2g-Fg-F8U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="NFJ-Da-nty"/>
                             <constraint firstItem="a2g-Fg-F8U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="QBC-Fi-GNy"/>
-                            <constraint firstItem="tuK-sz-1bJ" firstAttribute="top" secondItem="a2g-Fg-F8U" secondAttribute="bottom" constant="72" id="RsQ-T1-9Ic"/>
+                            <constraint firstItem="gkl-VJ-N3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dG0-rS-f7x"/>
+                            <constraint firstItem="gkl-VJ-N3g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ttp-CR-meg"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="EmailTF" destination="1hd-f3-F1K" id="Ct7-Of-dt2"/>
                         <outlet property="LoginInBtnAction" destination="8bC-Xf-vdC" id="X3x-0g-gLs"/>
                         <outlet property="PasswordTF" destination="sKK-zD-jaM" id="3aP-rA-DR7"/>
                         <outlet property="UsernameTF" destination="mc4-sM-MgL" id="QpB-7C-lAz"/>
-                        <outlet property="userName" destination="tuK-sz-1bJ" id="1R7-aG-Jpa"/>
                         <segue destination="DiB-df-skN" kind="show" identifier="showMainVC" id="Hit-ka-syA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2286.5" y="1055.5"/>
+            <point key="canvasLocation" x="-2581" y="1083"/>
         </scene>
         <!--Friends List-->
         <scene sceneID="S5d-81-yrJ">
@@ -120,7 +109,7 @@
                         <viewControllerLayoutGuide type="bottom" id="4ku-cx-yDd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3aa-ql-RjN" customClass="UITableView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b05-uu-uvU" userLabel="Dogs Online">
@@ -177,17 +166,17 @@
             <objects>
                 <tableViewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PZb-AY-eh5" customClass="HomeViewController" customModule="golf_n_friends_client" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" rowHeight="137" sectionHeaderHeight="28" sectionFooterHeight="28" id="XXs-6j-MVz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeagueTableViewCell" rowHeight="137" id="Tmz-ql-KGH" customClass="LeagueTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="137"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="137"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tmz-ql-KGH" id="H13-GW-lK1">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="136"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="League Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1OG-QI-loO">
@@ -231,15 +220,15 @@
             <objects>
                 <tableViewController id="RDN-UI-YxZ" customClass="NotificationsTableViewController" customModule="golf_n_friends_client" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="E5Y-7G-9WU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeagueInvitationTableViewCell" id="chL-4o-Ap4" customClass="LeagueInvitationTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="chL-4o-Ap4" id="v0O-mu-Kar">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invitation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlf-5p-uOp">
@@ -288,7 +277,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vob-4M-PMb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Cpc-WA-h75">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-XV-lS9">
@@ -306,12 +295,12 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ckP-A9-SK4" userLabel="myTable">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.039215686270000001" green="0.78039215689999997" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="3O2-aS-VZL">
-                                    <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ixr-qX-ML2">
@@ -324,7 +313,7 @@
                                                 <action selector="segmentChanged:" destination="U1s-vS-avG" eventType="valueChanged" id="5x6-y3-D8X"/>
                                             </connections>
                                         </segmentedControl>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDC-lf-t23">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDC-lf-t23">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxM-Ym-NGU">
@@ -350,10 +339,10 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="userCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" id="jQP-A8-qeR" userLabel="userCell">
-                                        <rect key="frame" x="0.0" y="292" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="228" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jQP-A8-qeR" id="C6L-6m-erS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2U-ZS-Zpu">
@@ -397,11 +386,11 @@
             <objects>
                 <tableViewController storyboardIdentifier="ReportScoreTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eqI-Pk-zla" customClass="ReportScoreTableViewController" customModule="golf_n_friends_client" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" id="dBo-Jl-4PL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bkT-QL-9Vg">
-                            <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="176" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="submitScoreBtnAction"/>
                             <connections>
@@ -410,10 +399,10 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="textFieldCell" rowHeight="84" id="mT4-dM-nb1" customClass="HoleScoreTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="84"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mT4-dM-nb1" id="tXh-y7-s5c">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="League Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jn-eF-gZQ">
@@ -454,17 +443,17 @@
             <objects>
                 <tableViewController id="Q2x-ht-CPp" customClass="LeagueViewController" customModule="golf_n_friends_client" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zdp-bT-jz1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="bPd-Ko-Rgt">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zou-qk-87V">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zou-qk-87V" id="bwN-iE-mT8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="League Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y08-dY-HXI">
@@ -482,10 +471,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Bgq-1m-5j5">
-                                        <rect key="frame" x="0.0" y="108" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bgq-1m-5j5" id="fE2-Qt-Dau">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="League Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-4D-siS">
@@ -501,10 +490,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JFF-eP-xfv">
-                                        <rect key="frame" x="0.0" y="152" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="152" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JFF-eP-xfv" id="juq-ru-xR9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsA-g9-lcR">
@@ -546,14 +535,14 @@
                         <viewControllerLayoutGuide type="bottom" id="CLJ-dQ-Gcz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KhA-Ga-ZCT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="myTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6fq-WY-28s">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="lwS-yM-u4P">
-                                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
@@ -562,10 +551,10 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="AII-Cs-8gW" customClass="SearchUsersTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AII-Cs-8gW" id="E9O-VP-6Ke">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-ki-dLI">
@@ -615,24 +604,6 @@
             </objects>
             <point key="canvasLocation" x="302.5" y="1892.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="SKy-1X-Hgr">
-            <objects>
-                <viewController id="iG1-I3-sbH" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5Om-z0-CmR"/>
-                        <viewControllerLayoutGuide type="bottom" id="NVG-wf-Fb1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Imm-Xp-L92">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4vQ-ij-mwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3107" y="1045"/>
-        </scene>
         <!--Invite-->
         <scene sceneID="hrK-ge-aV6">
             <objects>
@@ -642,14 +613,14 @@
                         <viewControllerLayoutGuide type="bottom" id="eFZ-l9-arf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aj9-IQ-X0y">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="myTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0mq-vV-8fd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="ufr-qh-FHu">
-                                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <connections>
@@ -658,10 +629,10 @@
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" id="FMb-HD-wnh" customClass="UserInviteTableViewCell" customModule="golf_n_friends_client" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FMb-HD-wnh" id="17X-6m-t0d">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41n-Qe-g7B">
