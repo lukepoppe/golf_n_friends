@@ -14,9 +14,18 @@ let maximumNumberOfHoleScores = 18
 class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate {
 
     @IBAction func submitScoreBtnAction(sender: AnyObject) {
+        var totalScore = 0
+        for holeScore in self.holeScores {
+            if let score = holeScore.score {
+                totalScore += score
+            }
+        }
+        self.score?.totalScore = totalScore
+        self.score?.submitted = true
+        self.score?.saveInBackground()
+        
         print("submitScoreBtnAction fired")
         navigationController?.popViewControllerAnimated(true)
-        
     }
     
     
@@ -118,6 +127,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         
         query.whereKey("member", equalTo: PFUser.currentUser()!)
         query.whereKey("league", equalTo: self.league!)
+        query.whereKey("submitted", equalTo: false)
         query.findObjectsInBackgroundWithBlock { (objects, error) in
             if error != nil {
                 return
@@ -129,6 +139,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
                 let score = Score()
                 score.member = PFUser.currentUser()
                 score.league = self.league
+                score.submitted = false
                 do { try score.save() }catch{}
                 self.score = score
             }

@@ -325,10 +325,11 @@
                                             </constraints>
                                         </view>
                                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ixr-qX-ML2">
-                                            <rect key="frame" x="121" y="153" width="359" height="29"/>
+                                            <rect key="frame" x="8" y="153" width="584" height="29"/>
                                             <segments>
                                                 <segment title="Members"/>
                                                 <segment title="Leaderboard"/>
+                                                <segment title="NewsFeed"/>
                                             </segments>
                                             <connections>
                                                 <action selector="segmentChanged:" destination="U1s-vS-avG" eventType="valueChanged" id="5x6-y3-D8X"/>
@@ -339,12 +340,16 @@
                                     <constraints>
                                         <constraint firstItem="GDC-lf-t23" firstAttribute="top" secondItem="3O2-aS-VZL" secondAttribute="top" id="0IX-9a-Tl4"/>
                                         <constraint firstItem="ixr-qX-ML2" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" constant="121" id="5Ha-jk-vQY"/>
+                                        <constraint firstItem="ixr-qX-ML2" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" constant="8" id="8Sn-3E-iKD"/>
                                         <constraint firstAttribute="trailing" secondItem="ixr-qX-ML2" secondAttribute="trailing" constant="120" id="9iA-Tm-7Fx"/>
+                                        <constraint firstAttribute="bottom" secondItem="ixr-qX-ML2" secondAttribute="bottom" constant="19" id="Dml-GL-Doj"/>
+                                        <constraint firstItem="ixr-qX-ML2" firstAttribute="top" secondItem="GDC-lf-t23" secondAttribute="bottom" constant="8" id="H7g-ds-LES"/>
                                         <constraint firstItem="GDC-lf-t23" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" id="Tg8-gv-aeq"/>
                                         <constraint firstItem="GDC-lf-t23" firstAttribute="top" secondItem="3O2-aS-VZL" secondAttribute="top" id="UND-uQ-LJM"/>
                                         <constraint firstItem="ixr-qX-ML2" firstAttribute="top" secondItem="GDC-lf-t23" secondAttribute="bottom" constant="8" id="XeD-cp-BXw"/>
                                         <constraint firstAttribute="trailing" secondItem="GDC-lf-t23" secondAttribute="trailing" id="dIZ-Wl-Dqz"/>
                                         <constraint firstItem="GDC-lf-t23" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" id="eie-1m-rEc"/>
+                                        <constraint firstAttribute="trailing" secondItem="ixr-qX-ML2" secondAttribute="trailing" constant="8" id="j8E-S0-a5N"/>
                                         <constraint firstItem="ixr-qX-ML2" firstAttribute="top" secondItem="GDC-lf-t23" secondAttribute="bottom" constant="8" id="lMo-dc-80u"/>
                                         <constraint firstAttribute="bottom" secondItem="ixr-qX-ML2" secondAttribute="bottom" constant="19" id="wcb-bn-T7m"/>
                                     </constraints>
@@ -406,7 +411,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="submitScoreBtnAction"/>
                             <connections>
-                                <action selector="submitScoreAction:" destination="eqI-Pk-zla" eventType="touchUpInside" id="v4f-gH-Zhr"/>
+                                <action selector="submitScoreBtnAction:" destination="eqI-Pk-zla" eventType="touchUpInside" id="QCX-Yp-haH"/>
                             </connections>
                         </button>
                         <prototypes>

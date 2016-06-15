@@ -17,18 +17,19 @@ class LeagueDetailViewController:  UIViewController,
     enum Filter: Int {
         case Members = 0
         case Leaderboard
+        case NewsFeed
+        
     }
     
     // MARK: Properties
     
     var league : League?
-    var users = [[PFUser](), [PFUser]()]
+    var users = [[PFUser](), [PFUser](), [PFUser]()]
     var data: [PFUser] { return users[filter.rawValue] }
     var filter: Filter {
         return Filter(rawValue: segmentedControl.selectedSegmentIndex)!
     }
     
-    var fruits = ["Apple", "Orange", "Banana"]
     
     // MARK: Outlets
     
@@ -84,11 +85,13 @@ class LeagueDetailViewController:  UIViewController,
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         switch filter {
-        case .Members, .Leaderboard:
+        case .Members, .Leaderboard, .NewsFeed:
             let cell = myTable.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath)
             cell.textLabel?.text = data[indexPath.row].username
             return cell
         }
+        
+        
         
     }
     

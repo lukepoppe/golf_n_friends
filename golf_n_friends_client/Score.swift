@@ -40,6 +40,30 @@ class Score: PFObject, PFSubclassing {
     }
     
     
+    var totalScore : Int? {
+        set {
+            if let value = newValue {
+                self.setObject(value, forKey: "totalScore")
+            }
+        }
+        get {
+            return self.objectForKey("totalScore") as? Int
+        }
+    }
+    
+    
+    var submitted : Bool? {
+        set {
+            if let value = newValue {
+                self.setObject(value, forKey: "submitted")
+            }
+        }
+        get {
+            return self.objectForKey("submitted") as? Bool
+        }
+    }
+    
+    
     static func parseClassName() -> String {
         return "Score"
     }
