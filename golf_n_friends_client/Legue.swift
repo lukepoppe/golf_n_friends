@@ -27,12 +27,20 @@ class League: PFObject, PFSubclassing {
             return self.relationForKey("members")
         }
     }
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
     var games : PFRelation? {
         get {
             return self.relationForKey("games")
         }
     }
+<<<<<<< Updated upstream
     
+=======
+
+>>>>>>> Stashed changes
     static func parseClassName() -> String {
         return "League"
     }

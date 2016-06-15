@@ -11,16 +11,17 @@ import Parse
 
 class Score: PFObject, PFSubclassing {
     
-    var league : League? {
+    var submitted : Bool? {
         set {
             if let value = newValue {
-                self.setObject(value, forKey: "league")
+                self.setObject(value, forKey: "submitted")
             }
         }
         get {
-            return self.objectForKey("league") as? League
+            return self.objectForKey("submitted") as? Bool
         }
     }
+
     
     var member : PFUser? {
         set {

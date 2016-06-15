@@ -9,52 +9,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "golf_n_friends_client/ViewController.swift"
-            timestampString = "484292921.843175"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "golf_n_friends_client.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; golf_n_friends_client.ViewController"
-                  moduleName = "golf_n_friends_client"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lpoppe/iOS/golf_n_friends_client/golf_n_friends_client/ViewController.swift"
-                  timestampString = "484173319.634946"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "70">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "golf_n_friends_client.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;golf_n_friends_client.ViewController&gt;"
-                  moduleName = "golf_n_friends_client"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lpoppe/iOS/golf_n_friends_client/golf_n_friends_client/ViewController.swift"
-                  timestampString = "484173319.63521"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "golf_n_friends_client/TableViewController.swift"
             timestampString = "484187062.40272"
             startingColumnNumber = "9223372036854775807"

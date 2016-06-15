@@ -6,6 +6,7 @@
 //  Copyright © 2016 Luke Poppe. All rights reserved.
 //
 
+
 import UIKit
 import Parse
 
@@ -28,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
       
         // Define Parse subclasses
+        Game.registerSubclass()
         Score.registerSubclass()
         HoleScore.registerSubclass()
         League.registerSubclass()

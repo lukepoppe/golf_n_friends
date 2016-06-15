@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var EmailTF: UITextField!
     @IBOutlet var LoginInBtnAction: UIView!
     
+
+
+    
+
     
     @IBOutlet weak var userName: UILabel!
 
@@ -26,6 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
       
         super.viewDidLoad()
+<<<<<<< Updated upstream
 //        userName.font = UIFont(name:"didot", size: 20)
 //        for family in UIFont.familyNames() {
 //            print("\(family)")
@@ -34,6 +39,21 @@ class ViewController: UIViewController {
 //                print("   \(name)")
 //            }
 //        }
+=======
+//     userName.font = UIFont(name: "bellerose.ttf", size: 20)
+//
+//        for family: String in UIFont.familyNames()
+//        {
+//            print("\(family)")
+//            for names: String in UIFont.fontNamesForFamilyName(family)
+//            {
+//                print("== \(names)")
+//            }
+//        }
+        
+        
+        
+>>>>>>> Stashed changes
         
     }
     

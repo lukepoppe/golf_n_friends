@@ -12,6 +12,7 @@ import Parse
 let maximumNumberOfHoleScores = 18
 
 class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate {
+<<<<<<< Updated upstream
 
     @IBAction func submitScoreBtnAction(sender: AnyObject) {
         var totalScore = 0
@@ -27,9 +28,11 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         print("submitScoreBtnAction fired")
         navigationController?.popViewControllerAnimated(true)
     }
+=======
+>>>>>>> Stashed changes
     
-    
-    var league : League?
+    var game : Game?
+    var user : PFUser?
     
     var holeScores = [HoleScore]()
     var score : Score? {
@@ -46,7 +49,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
                             self.holeScores = holeScores
                             self.tableView.reloadData()
                             
-                            if self.holeScores.count < 18 {
+                            if self.holeScores.count < 18 && self.shouldBeAbleToEditTheScore() {
                                 self.addNewHoleScore()
                             }
                         } else {
@@ -65,13 +68,9 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         }
     }
     
-    
-    @IBAction func submitScoreAction(sender: AnyObject) {
-        print("submitScoreAction fired")
-        print(holeScores)
-    
+    func shouldBeAbleToEditTheScore() -> Bool {
         
-        
+        return self.score?.submitted == false && self.score!.member!.isMe() == true
     }
     
     
@@ -92,6 +91,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         alert.addTextFieldWithConfigurationHandler { (textField) in
             textField.keyboardType = .NumberPad
             self.firstHoleNumberTextField = textField
+            
         }
         
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) in
@@ -123,6 +123,7 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
+<<<<<<< Updated upstream
         let query = PFQuery(className: Score.parseClassName())
         
         query.whereKey("member", equalTo: PFUser.currentUser()!)
@@ -142,13 +143,34 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
                 score.submitted = false
                 do { try score.save() }catch{}
                 self.score = score
+=======
+        if self.score == nil {
+            let user = self.user ?? PFUser.currentUser()!
+            NetworkService.sharedInstance.getScoreForGame(self.game!, user: user) { (optScore) in
+                
+                if let score = optScore {
+                    self.score = score
+                } else {
+                    let score = Score()
+                    score.member = user
+                    do { try score.save() }catch{}
+                    self.game?.scores?.addObject(score)
+                    self.game?.saveInBackground()
+                    self.score = score
+                }
+>>>>>>> Stashed changes
             }
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func submitScoreAction(sender: AnyObject) {
+        self.score?.submitted = true
+        self.score?.saveInBackgroundWithBlock({ (success, error) in
+            if success {
+                self.navigationController?.popViewControllerAnimated(true)
+            }
+        })
     }
 
     // MARK: - Table view data source
@@ -171,8 +193,12 @@ class ReportScoreTableViewController: UITableViewController, UITextFieldDelegate
         let holeScore = self.holeScores[indexPath.row]
         cell.configureWithHoleScore(holeScore)
         
-        if self.isLastHoleScore(holeScore) {
-            cell.textField.becomeFirstResponder()
+        if self.shouldBeAbleToEditTheScore() {
+            cell.textField.userInteractionEnabled = false
+        } else {
+            if self.isLastHoleScore(holeScore) {
+                cell.textField.becomeFirstResponder()
+            }
         }
 
         return cell
