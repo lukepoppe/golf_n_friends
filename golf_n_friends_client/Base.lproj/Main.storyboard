@@ -213,7 +213,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tc-dg-0U0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-511.5" y="-226.5"/>
+            <point key="canvasLocation" x="-358" y="-227"/>
         </scene>
         <!--Notifications Table View Controller-->
         <scene sceneID="j1p-lA-q9B">
@@ -303,21 +303,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ixr-qX-ML2">
-                                            <rect key="frame" x="8" y="142" width="359" height="29"/>
-                                            <segments>
-                                                <segment title="Members"/>
-                                                <segment title="Leaderboard"/>
-                                            </segments>
-                                            <connections>
-                                                <action selector="segmentChanged:" destination="U1s-vS-avG" eventType="valueChanged" id="5x6-y3-D8X"/>
-                                            </connections>
-                                        </segmentedControl>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GDC-lf-t23">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDC-lf-t23">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="145"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxM-Ym-NGU">
-                                                    <rect key="frame" x="127" y="103" width="121" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxM-Ym-NGU">
+                                                    <rect key="frame" x="240" y="81" width="121" height="30"/>
                                                     <state key="normal" title="Report new score"/>
                                                     <connections>
                                                         <segue destination="eqI-Pk-zla" kind="show" id="WjA-Mi-c48"/>
@@ -326,15 +316,37 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="141" id="sJH-v7-eSp"/>
+                                                <constraint firstAttribute="height" constant="145" id="3jq-sN-b5B"/>
+                                                <constraint firstAttribute="width" constant="600" id="EQ9-A2-UpQ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="600" id="awS-kb-8hP"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="dky-8a-9S7"/>
+                                                <constraint firstItem="AxM-Ym-NGU" firstAttribute="centerY" secondItem="GDC-lf-t23" secondAttribute="centerY" id="vjg-X4-9oW"/>
+                                                <constraint firstItem="AxM-Ym-NGU" firstAttribute="centerX" secondItem="GDC-lf-t23" secondAttribute="centerX" id="wTq-Im-U55"/>
                                             </constraints>
                                         </view>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ixr-qX-ML2">
+                                            <rect key="frame" x="121" y="153" width="359" height="29"/>
+                                            <segments>
+                                                <segment title="Members"/>
+                                                <segment title="Leaderboard"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="U1s-vS-avG" eventType="valueChanged" id="5x6-y3-D8X"/>
+                                            </connections>
+                                        </segmentedControl>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstItem="GDC-lf-t23" firstAttribute="top" secondItem="3O2-aS-VZL" secondAttribute="top" id="0IX-9a-Tl4"/>
+                                        <constraint firstItem="ixr-qX-ML2" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" constant="121" id="5Ha-jk-vQY"/>
+                                        <constraint firstAttribute="trailing" secondItem="ixr-qX-ML2" secondAttribute="trailing" constant="120" id="9iA-Tm-7Fx"/>
                                         <constraint firstItem="GDC-lf-t23" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" id="Tg8-gv-aeq"/>
                                         <constraint firstItem="GDC-lf-t23" firstAttribute="top" secondItem="3O2-aS-VZL" secondAttribute="top" id="UND-uQ-LJM"/>
-                                        <constraint firstAttribute="trailing" secondItem="GDC-lf-t23" secondAttribute="trailing" id="crN-kp-gRD"/>
+                                        <constraint firstItem="ixr-qX-ML2" firstAttribute="top" secondItem="GDC-lf-t23" secondAttribute="bottom" constant="8" id="XeD-cp-BXw"/>
+                                        <constraint firstAttribute="trailing" secondItem="GDC-lf-t23" secondAttribute="trailing" id="dIZ-Wl-Dqz"/>
+                                        <constraint firstItem="GDC-lf-t23" firstAttribute="leading" secondItem="3O2-aS-VZL" secondAttribute="leading" id="eie-1m-rEc"/>
+                                        <constraint firstItem="ixr-qX-ML2" firstAttribute="top" secondItem="GDC-lf-t23" secondAttribute="bottom" constant="8" id="lMo-dc-80u"/>
+                                        <constraint firstAttribute="bottom" secondItem="ixr-qX-ML2" secondAttribute="bottom" constant="19" id="wcb-bn-T7m"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
@@ -379,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usv-Tg-76N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519.5" y="268.5"/>
+            <point key="canvasLocation" x="519" y="268"/>
         </scene>
         <!--Report Score Table View Controller-->
         <scene sceneID="YMJ-6R-ZpT">
@@ -436,7 +448,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m74-VB-xhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.5" y="-58.5"/>
+            <point key="canvasLocation" x="1320" y="277"/>
         </scene>
         <!--Create A New League-->
         <scene sceneID="ZMO-xj-QdL">
@@ -699,7 +711,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPd-Ms-cjt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1148.5" y="-226.5"/>
+            <point key="canvasLocation" x="-1039" y="-227"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OKP-DN-mA7">
