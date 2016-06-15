@@ -21,8 +21,6 @@ class FriendsListTableViewController: UITableViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            print("FollowListViewController loaded")
-            
             loadFollowing()
 
         }

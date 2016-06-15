@@ -9,6 +9,12 @@
 import UIKit
 import Parse
 
+//class Object {
+//    init(snapshot: FIRDatabseSnapshot) {
+//        username =( snapshot.value as! [String:String])["userna,e"]
+//    }
+//}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0/255.0, green: 209/255.0, blue: 121/255.0, alpha: 1.0)
+//        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
       
         // Define Parse subclasses
         Score.registerSubclass()

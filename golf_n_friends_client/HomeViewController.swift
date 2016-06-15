@@ -11,6 +11,7 @@ import Parse
 
 class HomeViewController: UITableViewController {
 
+    @IBOutlet weak var navBar: UINavigationItem!
     
     var items = [League]()
     
@@ -18,6 +19,9 @@ class HomeViewController: UITableViewController {
         super.viewDidLoad()
         
         self.loadContent()
+        
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,7 +53,8 @@ class HomeViewController: UITableViewController {
             else {
             return
         }
-        leagues.query().findObjectsInBackgroundWithBlock { (objects, error) in
+            let query = leagues.query()
+        query.findObjectsInBackgroundWithBlock { (objects, error) in
             if let fetchedLeagues = objects as? [League] {
                 self.items = fetchedLeagues
                 dispatch_async(dispatch_get_main_queue(), { 

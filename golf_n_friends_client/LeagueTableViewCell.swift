@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class LeagueTableViewCell: UITableViewCell {
 
@@ -16,12 +17,17 @@ class LeagueTableViewCell: UITableViewCell {
         didSet {
             if let league = self.league {
                 self.titleLabel.text = league.leagueName
+    
+                
+            
             }
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+
         // Initialization code
     }
 
@@ -30,5 +36,8 @@ class LeagueTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    
 
 }

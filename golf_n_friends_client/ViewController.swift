@@ -20,11 +20,20 @@ class ViewController: UIViewController {
     @IBOutlet var LoginInBtnAction: UIView!
     
     
+    @IBOutlet weak var userName: UILabel!
 
     
     override func viewDidLoad() {
-        
+      
         super.viewDidLoad()
+//        userName.font = UIFont(name:"didot", size: 20)
+//        for family in UIFont.familyNames() {
+//            print("\(family)")
+//            
+//            for name in UIFont.fontNamesForFamilyName(family) {
+//                print("   \(name)")
+//            }
+//        }
         
     }
     

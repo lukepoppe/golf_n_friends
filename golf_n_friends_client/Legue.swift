@@ -27,7 +27,12 @@ class League: PFObject, PFSubclassing {
             return self.relationForKey("members")
         }
     }
-
+    var games : PFRelation? {
+        get {
+            return self.relationForKey("games")
+        }
+    }
+    
     static func parseClassName() -> String {
         return "League"
     }
